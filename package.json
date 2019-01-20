@@ -1,0 +1,30 @@
+{
+  "author": "Atiya Haider",
+  "name": "exercise-tracker",
+  "version": "0.0.1",
+  "description": "A REST API project, part of Free Code Camp's curriculum",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "moment": "^2.23.0",
+    "mongoose": "^4.13.17"
+  },
+  "engines": {
+    "node": "6.9.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atiyahaider/exercise-tracker.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/atiyahaider/exercise-tracker/issues"
+  },
+  "homepage": "https://github.com/atiyahaider/exercise-tracker#readme"
+}

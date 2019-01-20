@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>Exercise Tracker | Free Code Camp</title>
+      <link href="style.css" rel="stylesheet" type="text/css">
+   </head>
+
+   <body>
+      <h1>Exercise tracker</h1>
+      <div id="forms">
+         <form action="/api/exercise/new-user" method="post">
+            <h3>Create a New User</h3>
+            <p><code>POST /api/exercise/new-user</code></p>
+            <input id="uname" type="text" name="username" placeholder="user name*" required autofocus>
+            <input type="submit" value="Submit">
+          </form>
+          <form action="/api/exercise/add" method="post">
+            <h3>Add exercises</h3>
+            <p><code>POST /api/exercise/add</code></p>
+            <input id="uid" type="text" name="userId" placeholder="user Id*" required>
+            <input id="desc" type="text" name="description" placeholder="description*" required>
+            <input id="dur" type="text" name="duration" placeholder="duration* (mins.)" required>
+            <input id="dat" type="text" name="date" placeholder="date (yyyy-mm-dd)">
+            <input type="submit" value="Submit">
+          </form>
+      </div>
+      <div id="bottom">
+          <p><strong>To GET the users's exercise log: </strong><code>GET /api/exercise/log?{userId}[&amp;from][&amp;to][&amp;limit]</code></p>
+          <p><strong>{ }</strong> = required, <strong>[ ]</strong> = optional</p>
+          <p><strong>from, to</strong> = dates (yyyy-mm-dd); <strong>limit</strong> = number</p>
+          <p><strong>For Example: </strong><code>/api/exercise/log/5c44d8c8d45c6035742edfe3/2018-02-01/2019-01-21/2</code></p>
+          <p><strong>or:&nbsp;&nbsp;</strong><code>/api/exercise/log/5c44d8c8d45c6035742edfe3/2018-02-01</code></p>
+      </div>
+   </body>
+
+</html>
