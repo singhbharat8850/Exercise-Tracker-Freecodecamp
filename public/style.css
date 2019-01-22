@@ -29,7 +29,7 @@ h1, h3 {
 }
 
 form {
-  margin: 10px;
+  margin: 20px;
   padding: 15px;
   background-color: #A099C2;
   display: inline-block;
@@ -96,14 +96,15 @@ code {
 }
 
 .fab {
-  font-size: 1.5em;
+  font-size: 1.35em;
 }
 
 .right {
   float: right;
+  padding-top: 5px;
 }
 
 td {
-  padding: 3px 5px 0px;
+  padding: 3px 3px;
 }
   
