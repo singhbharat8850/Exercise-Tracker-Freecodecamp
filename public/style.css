@@ -9,7 +9,7 @@ body {
   background-color: #DDDAEE;
   text-align: center;
 }
- 
+
 h1{
   background-color: #C9C2EA;
   padding: 5px;
@@ -24,6 +24,7 @@ h1, h3 {
 
 #forms {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
 }
@@ -32,9 +33,7 @@ form {
   margin: 20px;
   padding: 15px;
   background-color: #A099C2;
-  display: inline-block;
-  width: 100%;
-  max-width: 500px;
+  width: 500px;
   border-radius: 5px;
   box-shadow: 2px 2px 4px #342C5E;
 }
@@ -75,7 +74,7 @@ code {
   display: inline-block;
   text-align: center;
   background-color: #A099C2;
-  margin: 10px;
+  margin: 10px 0;
   padding: 15px;
   max-width: 1000px;
   border-radius: 5px;
@@ -107,4 +106,21 @@ code {
 td {
   padding: 3px 3px;
 }
-  
+
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 14px;
+  }
+  input, #bottom {
+    font-size: 14px;
+  }
+  input[type=submit] {
+    font-size: 14px;
+  }
+  code {
+    font-size: 10px;
+  }
+  form {
+    width: 340px;
+  }
+}
