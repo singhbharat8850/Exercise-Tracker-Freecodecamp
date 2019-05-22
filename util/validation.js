@@ -14,7 +14,7 @@ module.exports = {
 
     id: () => {
         return (req, res, next) => {
-            let UserId;
+            let userId;
             if (req.method === 'POST') //coming from form
                 userId  = req.body.userId;
             else       //coming from API
